@@ -38,7 +38,7 @@ public class LoginServiceImpl implements LoginService {
 	@Override
 	public LoggedInUserDto getLoggedInUserDetails( LoginRequestDto dto ) {
 		RestTemplate template = new RestTemplate();
-		String url = "http://13.235.32.116/spti-health-api/logins/loggedin-user-details";
+		String url = "http://13.235.32.116:8081/spti-health-api/logins/loggedin-user-details";
 
 		HttpHeaders headers = new HttpHeaders();
 		headers.setAccept( Arrays.asList( MediaType.APPLICATION_JSON ) );
